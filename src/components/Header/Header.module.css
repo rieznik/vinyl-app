@@ -1,0 +1,51 @@
+.root {
+  background-color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  color: var(--white);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: transform 0.2s;
+  fill: none;
+  stroke: currentcolor;
+}
+
+.button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.chevron {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  transform: rotate(90deg);
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+.folder {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}

@@ -1,0 +1,97 @@
+.root {
+  padding: 16px;
+}
+
+.title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.125rem;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.artist {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.125rem;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  bottom: 16px;
+  left: 8px;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+.playIcon {
+  fill: var(--secondary);
+  width: 42px;
+  height: 42px;
+}
+
+.record {
+  position: absolute;
+  width: 82%;
+  top: 28px;
+  left: 30px;
+}
+
+.cover {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.infoSection {
+  margin-bottom: 16px;
+}
+
+.info {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary);
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.infoName {
+  margin-right: 0.5em;
+  color: var(--ink);
+}
+
+.subsectionTitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.125rem;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.button {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 6px;
+  stroke: currentcolor;
+  fill: none;
+}
+
+.button.isInCollection {
+  background-color: var(--active);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.6667;
+}

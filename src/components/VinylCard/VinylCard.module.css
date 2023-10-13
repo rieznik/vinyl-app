@@ -1,0 +1,92 @@
+.root {
+  position: relative;
+  overflow: hidden;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  width: 28px;
+  height: 28px;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 1.5;
+}
+
+.heart.isFavorite {
+  fill: var(--favorite);
+  stroke: var(--favorite);
+}
+
+.favorite:hover {
+  transform: scale(1.15);
+}
+
+.cover {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.artist {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.info {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  color: var(--secondary);
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.infoName {
+  margin-right: 0.2em;
+  color: var(--ink);
+}
+
+.button {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 6px;
+  stroke: currentcolor;
+  fill: none;
+}
+
+.button.isInCollection {
+  background-color: var(--active);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.6667;
+}

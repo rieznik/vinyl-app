@@ -1,0 +1,19 @@
+.root {
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  padding: 11px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--secondary);
+  width: 100%;
+}
+
+.root::placeholder {
+  opacity: 1;
+  color: var(--ink-light);
+}
+
+.error {
+  outline: var(--favorite) solid 2px;
+}

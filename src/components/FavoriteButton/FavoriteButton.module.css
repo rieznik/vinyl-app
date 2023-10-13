@@ -1,0 +1,43 @@
+.root {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  width: 28px;
+  height: 28px;
+}
+
+.root:hover {
+  transform: scale(1.15);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 1.5;
+}
+
+.active {
+  fill: var(--favorite);
+  stroke: var(--favorite);
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 7px;
+  font-size: 0.875rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--secondary);
+  background-color: var(--white);
+}

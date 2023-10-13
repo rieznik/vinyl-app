@@ -1,0 +1,25 @@
+.input {
+  /* visually hidden */
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.checked {
+  width: 16px;
+  height: 16px;
+}
+
+.unchecked {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 2px solid #b9c0c7;
+}

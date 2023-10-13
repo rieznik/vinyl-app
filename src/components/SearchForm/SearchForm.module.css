@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.isWideMobile {
+  grid-column: span 2;
+}
+
+.errors {
+  position: relative;
+  color: var(--favorite);
+  font-weight: 500;
+}
+
+.errorMessage {
+  list-style: inside;
+  color: var(--favorite);
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.holder {
+  position: relative;
+  min-height: 45px;
+}
+
+@media screen and (width >= 1240px) {
+  .root {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 30px;
+  }
+
+  .isWideMobile {
+    grid-column: span 1;
+  }
+
+  .input.isWideDesktop {
+    grid-column: span 4;
+  }
+}

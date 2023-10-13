@@ -1,0 +1,90 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.root.isOnTop {
+  z-index: 1;
+}
+
+.select {
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  padding: 11px 14px;
+  color: var(--text-primary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select.isPlaceholder {
+  color: var(--ink-light);
+}
+
+.valueText {
+  max-width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.chevron {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-width: 2;
+  stroke: var(--secondary);
+  transform: rotateX(0deg);
+  transition: 0.6s ease-in-out;
+}
+
+.chevron.isUp {
+  transform: rotateX(180deg);
+  transition: 0.6s ease-in-out;
+}
+
+.list {
+  visibility: hidden;
+  z-index: -1;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.list.isVisible {
+  padding: 5px 0;
+  visibility: visible;
+  height: fit-content;
+  opacity: 1;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 5px 14px;
+  width: 100%;
+}
+
+.listItem:hover,
+.listItem.isSelected {
+  background-color: var(--border-color);
+}
+
+.label {
+  padding-left: 6px;
+}
+
+.error {
+  outline: var(--favorite) solid 2px;
+}

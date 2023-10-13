@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 35px;
+}
+
+.page {
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.page:hover,
+.page:focus {
+  border: 2px solid var(--secondary);
+}
+
+.page:active {
+  transform: translateY(1px);
+}
+
+.page a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.page.isActive {
+  pointer-events: none;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.page.isThreeDots {
+  font-family: Inter, sans-serif;
+  pointer-events: none;
+}
